@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Beautiful Animation</title>
+        <style>
+            .container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            }
+            .box {
+                width: 100px;
+                height: 100px;
+                background-color: #ff7f50;
+                position: relative;
+                animation: move 2s ease-in-out infinite;
+            }
+            @keyframes move {
+                0% {
+                    left: 0;
+                }
+                50% {
+                    left: 50%;
+                }
+                100% {
+                    left: 0;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Hello world</h1>
+
+        <div class="container">
+            <div class="box"></div>
+        </div>
+    </body>
+</html>
